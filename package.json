@@ -1,0 +1,17 @@
+{
+  "name": "anika-site",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./styles.css -o ./dist/output.css",
+    "start": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch"
+  },
+  "author": "Anika Bookout",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
