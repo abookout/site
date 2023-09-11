@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anika Bookout</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
@@ -10,24 +11,33 @@
     <!-- TODO: skip to content unnecessary unless done nav -->
     <!-- <a href="#main-content" class="skip-to-content">Skip to main content</a> -->
     <header
-      class="not-prose h-20 sticky top-0 bg-inherit flex flex-nowrap justify-end items-center py-4 gap-x-6"
+      class="not-prose h-16 md:h-24 sticky top-0 bg-inherit flex flex-nowrap justify-end items-center gap-x-6 px-6"
     >
       <a href="mailto:anbookout@gmail.com" class="link">anbookout@gmail.com</a>
       <a
         href="https://github.com/abookout"
         target="_blank"
         title="Anika's GitHub repository (opens in a new tab)"
-        ><img src="media/github-mark.png" alt="GitHub logo" class="w-12 h-12"
+        ><img
+          src="media/github-mark.png"
+          alt="GitHub logo"
+          class="w-10 md:w-12 h-10 md:h-12"
       /></a>
-      <hr />
     </header>
 
     <!-- TODO: nav -->
-    <main id="main-content" class="mx-10 md:mx-24 lg:mx-[25vw]">
+    <main id="main-content" class="mx-4 md:mx-24 lg:mx-[25vw]">
       <h1>Hi, I'm Anika :)</h1>
-      <p class="lead">This is placeholder content!</p>
-      <h2 class="sticky top-10">What I Know</h2>
+      <p class="lead">
+        I'm a SEng student at the University of Victoria. I value
+        sustainability, accessibility, and inclusion.
+      </p>
+      <div class="sticky-header">
+        <h2>What I Know</h2>
+        <hr class="m-0 -mt-4" />
+      </div>
       <p>
+        <!-- C++, React/CSS, JS/TS, Python,  -->
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -38,8 +48,14 @@
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-      <h2 class="sticky top-10">What I've Done</h2>
+      <div class="sticky-header">
+        <h2>What I've Done</h2>
+        <hr class="m-0 -mt-4" />
+      </div>
       <p>
+        <!-- fire sim, ythonpay, nes emu -->
+        <!-- TODO: implement ythonpay interpreter??? http://skulpt.org/using.html -->
+        <!-- also work experience -->
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -50,8 +66,12 @@
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-      <h2 class="sticky top-10">What I Love</h2>
+      <div class="sticky-header">
+        <h2>What I Love</h2>
+        <hr class="m-0 -mt-4" />
+      </div>
       <p>
+        <!-- my language, running, birding?, learning -->
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -63,6 +83,47 @@
         of Lorem Ipsum.
       </p>
       <hr />
+      <!-- <h2 class="sticky top-16">My resume</h2> -->
+
+      <div class="sticky-header">
+        <h2>My Resume</h2>
+        <hr class="m-0 -mt-4" />
+      </div>
+      <p>
+        <a href="media/Anika_Bookout_Resume.pdf"
+          >My resume is available here (PDF)</a
+        >. If you'd like, you can also view
+        <a target="_blank" href="https://www.overleaf.com/read/ytspcwbxtgmj"
+          >the LaTeX source on Overleaf (opens in a new tab)</a
+        >.
+      </p>
+      <hr />
+      <h2 class="text-base font-bold">About this site</h2>
+      <p>
+        This website is a single page of vanilla HTML with Tailwind for styling.
+        It doesn't use Webpack or any other build tools. It was made with minor
+        help from GitHub Copilot, though it wasn't very useful.
+        <!-- CD is done using Cloudflare Pages, which is where this site is hosted. My usual CI/CD
+        pipeline uses GitHub Actions, but Cloudflare had the functionality, so I
+        went with that instead. -->
+      </p>
+      <p>
+        I chose a vanilla HTML implementation over showing off my knowledge of
+        React because it made more sense for the goals of the site: I wanted it
+        to be simple, accessible, and performant.
+      </p>
+      <p>
+        This site is also available
+        <a class="link" href="https://github.com/abookout/site">on my GitHub</a>
+        if you'd like to see how I made it.
+      </p>
+      <!-- Space at the bottom of the page (I like to read in the middle of the screen) -->
+      <div class="mt-[20vh] lg:mt-[35vh]"></div>
+      <!-- <div class="mt-[25vh]"></div> -->
+      <hr class="mb-4" />
+      <p class="text-sm text-center">
+        Thanks for visiting! Please feel free to reach out any way you'd like.
+      </p>
     </main>
   </body>
 </html>
