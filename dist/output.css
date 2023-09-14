@@ -1450,6 +1450,8 @@ a:hover {
   top: 4rem;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--tw-prose-hr);
 }
 
 @media (min-width: 768px) {

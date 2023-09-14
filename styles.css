@@ -25,6 +25,7 @@
 
 @layer utilities {
   .sticky-header {
-    @apply sticky top-16 bg-zinc-100;
+    @apply sticky top-16 pb-4 bg-zinc-100;
+    border-bottom: 1px solid var(--tw-prose-hr);
   }
 }
