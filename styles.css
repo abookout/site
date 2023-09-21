@@ -10,8 +10,7 @@
 
 @layer components {
   .skip-to-content {
-    padding: 0.5rem;
-    position: absolute;
+    @apply bg-zinc-100 z-50 p-2 absolute;
     transform: translateY(-150%);
     @media not (prefers-reduced-motion) {
       transition: transform 200ms ease-in;
@@ -21,11 +20,15 @@
   .skip-to-content:focus {
     transform: translateY(0);
   }
+
+  .badge {
+    @apply inline-block px-3 py-1 text-sm font-medium rounded-full bg-blue-200;
+  }
 }
 
 @layer utilities {
   .sticky-header {
-    @apply sticky top-16 pb-4 bg-zinc-100;
+    @apply sticky top-16 pb-10 bg-zinc-100 w-full;
     border-bottom: 1px solid var(--tw-prose-hr);
   }
 }

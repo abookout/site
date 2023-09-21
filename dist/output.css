@@ -1334,8 +1334,11 @@ a:hover {
 }
 
 .skip-to-content {
-  padding: 0.5rem;
   position: absolute;
+  z-index: 50;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+  padding: 0.5rem;
   transform: translateY(-150%);
   @media not (prefers-reduced-motion) {
     transition: transform 200ms ease-in;
@@ -1346,6 +1349,20 @@ a:hover {
   transform: translateY(0);
 }
 
+.badge {
+  display: inline-block;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
 .sticky {
   position: sticky;
 }
@@ -1354,8 +1371,8 @@ a:hover {
   top: 0px;
 }
 
-.m-0 {
-  margin: 0px;
+.top-26 {
+  top: 6.5rem;
 }
 
 .mx-4 {
@@ -1363,16 +1380,25 @@ a:hover {
   margin-right: 1rem;
 }
 
-.-mt-4 {
-  margin-top: -1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-\[20vh\] {
   margin-top: 20vh;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -1393,6 +1419,10 @@ a:hover {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .flex-nowrap {
@@ -1419,6 +1449,11 @@ a:hover {
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-6 {
@@ -1448,9 +1483,10 @@ a:hover {
 .sticky-header {
   position: sticky;
   top: 4rem;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
-  padding-bottom: 1rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--tw-prose-hr);
 }
 
@@ -1471,6 +1507,11 @@ a:hover {
   .md\:w-12 {
     width: 3rem;
   }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1481,5 +1522,10 @@ a:hover {
 
   .lg\:mt-\[35vh\] {
     margin-top: 35vh;
+  }
+
+  .lg\:px-\[25vw\] {
+    padding-left: 25vw;
+    padding-right: 25vw;
   }
 }

@@ -9,7 +9,11 @@
 
   <body class="min-w-full prose prose-lg prose-zinc bg-zinc-100">
     <!-- TODO: skip to content unnecessary unless done nav -->
-    <!-- <a href="#main-content" class="skip-to-content">Skip to main content</a> -->
+    <a
+      href="#main-content"
+      class="skip-to-content not-prose mx-4 md:mx-24 lg:mx-[25vw]"
+      >Skip to main content</a
+    >
     <header
       class="not-prose h-16 md:h-24 sticky top-0 bg-inherit flex flex-nowrap justify-end items-center gap-x-6 px-6"
     >
@@ -26,7 +30,7 @@
     </header>
 
     <!-- TODO: nav -->
-    <main id="main-content" class="mx-4 md:mx-24 lg:mx-[25vw]">
+    <main id="main-content" class="px-0 md:px-24 lg:px-[25vw]">
       <h1 class="text-4xl">Hi, I'm Anika :)</h1>
       <p class="lead">
         I'm a software engineering student at the University of Victoria. I
@@ -42,22 +46,76 @@
       </p>
 
       <h2 class="sticky-header">What I've Done</h2>
-        <!-- fire sim, ythonpay, nes emu -->
-        <!-- TODO: implement ythonpay interpreter??? http://skulpt.org/using.html -->
-        <!-- also work experience -->
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-      <div class="sticky-header">
-        <h2>What I Love</h2>
-        <hr class="m-0 -mt-4" />
+      <!-- fire sim, ythonpay, nes emu -->
+      <!-- TODO: implement ythonpay interpreter??? http://skulpt.org/using.html -->
+      <!-- also work experience -->
+
+      <ul class="list-none">
+        <li class="">
+          <h3 class="inline-block sticky top-26">Real-time Fire Simulation</h3>
+          <ul class="inline-block">
+            <li class="badge">HLSL</li>
+            <li class="badge">C#</li>
+            <li class="badge">Unity</li>
+          </ul>
+          <p class="mt-0">
+            <a
+              target="_blank"
+              href="https://github.com/abookout/Interactive-Fire-Simulator"
+              >(source on GitHub)</a
+            >
+          </p>
+          <!-- TODO: video tag to embed file -->
+          <iframe
+            width="500"
+            height="300"
+            src="https://www.youtube.com/embed/EngW7tLk6R8"
+            title="Sample Videos / Dummy Videos For Demo Use"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="mx-auto"
+          ></iframe>
+
+          <p>
+            This project was completed as the term project for a computer
+            animation class. As part of the course requirements, I also prepared
+            a
+            <a target="_blank" href="media/Fire_Sim_Paper.pdf"
+              >conference-style paper (opens in a new tab)</a
+            >
+            describing my research and implementation.
+          </p>
+          <p>
+            The first thing you might notice is the large obvious particles. As
+            the focus of this project is on the simulation over high-fidelity
+            graphics, I haven't implemented any sophisticated rendering
+            technique.
+          </p>
+          <p>
+            The simulation model I chose (Smoothed Particle Hydrodynamics) is
+            flexible and performant enough to simulate water, fire, or even the
+            formation of stars! The simulation is done using an HLSL compute
+            shader and therefore it runs on the GPU. This drastically increases
+            the number of particles that can be simulated in real-time in order
+            to achieve a visually appealing result.
+          </p>
+          <p>
+            This project was made with the game engine Unity to bootstrap
+            development. Here, Unity is simply used for scene management and
+            basic particle rendering. I chose Unity because of my familiarity
+            with the engine.
+          </p>
+        </li>
+
+        <li class="">
+          <h3 class="inline-block">NES Emulator</h3>
+          <ul class="inline-block">
+            <li class="badge">C++</li>
+          </ul>
+        </li>
+      </ul>
+
       <h2 class="sticky-header">What I Love</h2>
       <p>
         <!-- my language, running, birding?, learning -->
@@ -92,9 +150,9 @@
         went with that instead. -->
       </p>
       <p>
-        I chose a vanilla HTML implementation over demonstrating my knowledge of
-        React because it made more sense for the goals of the site: I wanted it
-        to be simple, accessible, and performant.
+        I chose vanilla HTML over demonstrating my knowledge of React because it
+        made more sense for the goals of the site: I wanted it to be simple,
+        accessible, and performant.
       </p>
       <p>
         The source is available
