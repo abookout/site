@@ -87,10 +87,10 @@
             describing my research and implementation.
           </p>
           <p>
-            The first thing you might notice is the large obvious particles. As
-            the focus of this project is on the simulation over high-fidelity
-            graphics, I haven't implemented any sophisticated rendering
-            technique.
+            From the video demo, the first thing you might notice is the big
+            chunky particles. As the focus of this project is on the simulation
+            over high-fidelity graphics, I haven't implemented any sophisticated
+            rendering technique.
           </p>
           <p>
             The simulation model I chose (Smoothed Particle Hydrodynamics) is
@@ -112,7 +112,31 @@
           <h3 class="inline-block">NES Emulator</h3>
           <ul class="inline-block">
             <li class="badge">C++</li>
+            <li class="badge">Catch2</li>
           </ul>
+          <p class="mt-0">
+            <a target="_blank" href="https://github.com/brennanmcmicking/nesemu"
+              >(source on GitHub)</a
+            >
+          </p>
+          <p>
+            This is a simplified NES emulator. It includes a complete emulator
+            for the 6502 CPU (all opcodes, timing, etc) and a partial
+            implementation of the PPU (no sprite rendering). I created it
+            alongside 3 classmates to fulfill the requirements for a term
+            project.
+          </p>
+          <p>
+            To make it possible to complete this project as a class project, we
+            simplified the requirements to only target successfully running a
+            specific test ROM. This ROM simply allows the user to change the
+            screen color by pressing various buttons on the controller.
+          </p>
+          <p>
+            While this isn't very visually impressive, it demonstrates the
+            complete CPU emulator, controller input, a simplified PPU (Picture
+            Processing Unit), and cartridge loading.
+          </p>
         </li>
       </ul>
 
@@ -145,9 +169,6 @@
         This website is a single page of HTML with Tailwind for styling. It
         doesn't use Webpack or any other build tools. It was made with minor
         help from GitHub Copilot, though it wasn't very useful.
-        <!-- CD is done using Cloudflare Pages, which is where this site is hosted. My usual CI/CD
-        pipeline uses GitHub Actions, but Cloudflare had the functionality, so I
-        went with that instead. -->
       </p>
       <p>
         I chose vanilla HTML over demonstrating my knowledge of React because it
