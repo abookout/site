@@ -1371,10 +1371,6 @@ a:hover {
   top: 0px;
 }
 
-.top-26 {
-  top: 6.5rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1486,7 +1482,7 @@ a:hover {
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--tw-prose-hr);
 }
 
