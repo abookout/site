@@ -445,6 +445,10 @@ a:hover {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.sticky-header + ul > li > h3:first-child {
+  margin-top: 0px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1356,8 +1360,8 @@ a:hover {
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
@@ -1447,9 +1451,9 @@ a:hover {
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
@@ -1486,6 +1490,13 @@ a:hover {
   border-bottom: 1px solid var(--tw-prose-hr);
 }
 
+@media (min-width: 640px) {
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mx-24 {
     margin-left: 6rem;
@@ -1502,11 +1513,6 @@ a:hover {
 
   .md\:w-12 {
     width: 3rem;
-  }
-
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 }
 

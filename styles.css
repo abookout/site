@@ -6,6 +6,10 @@
   a {
     @apply text-blue-500 hover:text-blue-700 underline;
   }
+
+  .sticky-header + ul > li > h3:first-child {
+    @apply mt-0;
+  }
 }
 
 @layer components {
@@ -22,7 +26,7 @@
   }
 
   .badge {
-    @apply inline-block px-3 py-1 text-sm font-medium rounded-full bg-blue-200;
+    @apply inline-block px-3 py-0.5 text-sm font-medium rounded-full bg-blue-200;
   }
 }
 
